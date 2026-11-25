@@ -1,0 +1,35 @@
+:root {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #182b3a;
+  background: #f0f4f5;
+  line-height: 1.55;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+main { width: min(100% - 2rem, 53rem); margin: clamp(2rem, 8vw, 5rem) auto 3rem; }
+header { border-top: 4px solid #006451; padding-top: 1.4rem; }
+.context { color: #006451; font-weight: 650; margin: 0 0 1rem; }
+h1 { font-size: clamp(2.6rem, 7vw, 4.6rem); line-height: 1.02; margin: 0 0 1rem; letter-spacing: -.045em; }
+.intro { font-size: 1.125rem; margin: 0 0 2rem; max-width: 38rem; color: #3a4e5b; }
+.panel { background: #fff; border: 1px solid #c6d4d9; border-radius: 1rem; padding: clamp(1.2rem, 4vw, 2rem); }
+.panel-title { display: flex; flex-wrap: wrap; gap: .5rem 1rem; align-items: baseline; justify-content: space-between; margin-bottom: 1.25rem; }
+h2 { font-size: 1.35rem; margin: 0; }
+a { color: #005f50; text-underline-offset: .18em; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid #1268ad; outline-offset: 4px; }
+form { display: grid; justify-items: start; gap: .65rem; }
+label { font-weight: 650; }
+input { width: 100%; border: 1px solid #adbec5; border-radius: .6rem; padding: .8rem; font: inherit; color: inherit; }
+input::file-selector-button { font: inherit; padding: .35rem .7rem; margin-right: .65rem; background: #e8f4f0; color: #004b3c; border: 1px solid #a9cfc4; border-radius: .35rem; cursor: pointer; }
+button, .download { font: inherit; font-weight: 650; background: #006451; color: white; border: 0; text-decoration: none; border-radius: .5rem; padding: .65rem 1rem; cursor: pointer; }
+button { margin-top: .45rem; }
+button:hover, .download:hover { background: #004f40; }
+button:disabled { background: #47675f; cursor: wait; }
+#result { margin-top: 1.3rem; border-top: 1px solid #d3dee1; padding-top: 1rem; overflow-wrap: anywhere; }
+#message { margin: 0 0 .8rem; font-weight: 600; }
+#result[data-state="error"] #message { color: #94262c; }
+.download { display: inline-block; }
+#errors { margin: .5rem 0 0; padding-left: 1.4rem; max-height: 20rem; overflow: auto; }
+#errors li + li { margin-top: .5rem; }
+footer { margin-top: 1.4rem; color: #3a4e5b; }
+footer p { margin: 0 0 .3rem; }
